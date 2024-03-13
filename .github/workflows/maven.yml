@@ -30,7 +30,7 @@ jobs:
     - name: Go to Microservices project
       run: |
         cd microservices/accounts
-        echo pwd
+        echo $(pwd)
     - name: Build with Maven
       run: mvn -B package --file pom.xml
 
