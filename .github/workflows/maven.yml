@@ -27,12 +27,11 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
-    - name: Go to Microservices project
+    - name: Build Microservices project
       run: |
         cd microservices/accounts
         echo $(pwd)
-    - name: Build with Maven
-      run: mvn -B package --file pom.xml
+        mvn -B package --file pom.xml
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
