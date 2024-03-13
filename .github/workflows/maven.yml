@@ -28,7 +28,9 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Go to Microservices project
-      run: cd microservices/accounts
+      run: |
+        cd microservices/accounts
+        echo pwd
     - name: Build with Maven
       run: mvn -B package --file pom.xml
 
