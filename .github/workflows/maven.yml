@@ -27,7 +27,7 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
-    - name: Build Microservices project
+    - name: Build Accounts Microservice project
       run: |
         cd microservices/accounts
         echo $(pwd)
