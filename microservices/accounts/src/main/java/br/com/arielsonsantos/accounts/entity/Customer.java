@@ -22,7 +22,7 @@ public class Customer extends BaseEntity {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(final Long id) {
         this.id = id;
     }
 
@@ -30,7 +30,7 @@ public class Customer extends BaseEntity {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(final String name) {
         this.name = name;
     }
 
@@ -38,7 +38,7 @@ public class Customer extends BaseEntity {
         return email;
     }
 
-    public void setEmail(String email) {
+    public void setEmail(final String email) {
         this.email = email;
     }
 
@@ -46,7 +46,7 @@ public class Customer extends BaseEntity {
         return mobileNumber;
     }
 
-    public void setMobileNumber(String mobileNumber) {
+    public void setMobileNumber(final String mobileNumber) {
         this.mobileNumber = mobileNumber;
     }
 
